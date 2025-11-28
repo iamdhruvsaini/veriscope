@@ -1,0 +1,28 @@
+{
+  "name": "VeriScope",
+  "version": "1.0.0",
+  "description": "This is VeriScope backend",
+  "license": "ISC",
+  "author": "",
+  "type": "commonjs",
+  "main": "index.js",
+   "scripts": {
+    "dev": "concurrently \"npm run dev:api-gateway\" \"npm run dev:user-service\" \"npm run dev:report-service\" \"npm run dev:review-service\" \"npm run dev:notification-service\" \"npm run dev:analytics-service\"",
+    "dev:api-gateway": "cd packages/api-gateway && npm run dev",
+    "dev:user-service": "cd packages/user-service && npm run dev",
+    "dev:report-service": "cd packages/report-service && npm run dev",
+    "dev:review-service": "cd packages/review-service && npm run dev",
+    "dev:notification-service": "cd packages/notification-service && npm run dev",
+    "dev:analytics-service": "cd packages/analytics-service && npm run dev",
+    "install:all": "npm install && concurrently \"npm run install:api-gateway\" \"npm run install:user-service\" \"npm run install:report-service\" \"npm run install:review-service\" \"npm run install:notification-service\" \"npm run install:analytics-service\"",
+    "install:api-gateway": "cd packages/api-gateway && npm install",
+    "install:user-service": "cd packages/user-service && npm install",
+    "install:report-service": "cd packages/report-service && npm install",
+    "install:review-service": "cd packages/review-service && npm install",
+    "install:notification-service": "cd packages/notification-service && npm install",
+    "install:analytics-service": "cd packages/analytics-service && npm install"
+  },
+  "devDependencies": {
+    "concurrently": "^7.6.0"
+  }
+}
