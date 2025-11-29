@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Report Submitted Confirmation</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script>
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "primary": "#f4d125",
+              "background-light": "#f8f8f5",
+              "background-dark": "#221f10",
+              "text-light": "#181711",
+              "text-dark": "#f8f8f5",
+              "secondary-text-light": "#6b6a62",
+              "secondary-text-dark": "#a1a09a"
+            },
+            fontFamily: {
+              "display": ["Space Grotesk", "sans-serif"]
+            },
+            borderRadius: {"DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px"},
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+          font-variation-settings:
+          'FILL' 1,
+          'wght' 400,
+          'GRAD' 0,
+          'opsz' 24
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background-light dark:bg-background-dark font-display text-text-light dark:text-text-dark">
+<div class="relative flex min-h-screen w-full flex-col group/design-root overflow-x-hidden">
+<header class="flex items-center bg-background-light dark:bg-background-dark p-4 pb-2 justify-between">
+<button aria-label="Close" class="text-text-light dark:text-text-dark flex size-12 shrink-0 items-center justify-center rounded-full">
+<span class="material-symbols-outlined">close</span>
+</button>
+<h2 class="text-text-light dark:text-text-dark text-lg font-bold leading-tight tracking-[-0.015em] flex-1 text-center pr-12">Report Submitted</h2>
+</header>
+<main class="flex-grow flex flex-col items-center px-4 pt-6 pb-8">
+<div class="mb-4 flex h-24 w-24 items-center justify-center rounded-full bg-primary">
+<span class="material-symbols-outlined text-black text-6xl">task_alt</span>
+</div>
+<h1 class="text-text-light dark:text-text-dark tracking-tight text-[32px] font-bold leading-tight text-center pb-2">Thank you!</h1>
+<p class="text-secondary-text-light dark:text-secondary-text-dark text-base font-normal leading-normal pb-8 px-4 text-center max-w-sm">Your report helps build a more accessible world for everyone.</p>
+<div class="w-full max-w-md rounded-xl border border-black/10 dark:border-white/10 bg-white dark:bg-background-dark p-6 shadow-sm">
+<h3 class="text-text-light dark:text-text-dark text-lg font-bold leading-tight tracking-[-0.015em] pb-4">AI Analysis Summary</h3>
+<div class="space-y-4">
+<div class="flex items-start gap-4">
+<div class="flex-shrink-0 text-primary">
+<span class="material-symbols-outlined">stairs</span>
+</div>
+<div class="flex flex-col">
+<p class="font-medium text-text-light dark:text-text-dark">Staircase with no ramp</p>
+<p class="text-sm text-secondary-text-light dark:text-secondary-text-dark">98% confidence</p>
+</div>
+</div>
+<div class="flex items-start gap-4">
+<div class="flex-shrink-0 text-primary">
+<span class="material-symbols-outlined">parking_sign</span>
+</div>
+<div class="flex flex-col">
+<p class="font-medium text-text-light dark:text-text-dark">Missing braille signage</p>
+<p class="text-sm text-secondary-text-light dark:text-secondary-text-dark">85% confidence</p>
+</div>
+</div>
+</div>
+<hr class="my-6 border-t border-black/10 dark:border-white/10"/>
+<div class="flex items-start gap-4">
+<div class="flex-shrink-0 text-secondary-text-light dark:text-secondary-text-dark">
+<span class="material-symbols-outlined">location_on</span>
+</div>
+<div class="flex flex-col">
+<p class="font-medium text-text-light dark:text-text-dark">Location</p>
+<p class="text-sm text-secondary-text-light dark:text-secondary-text-dark">123 MG Road, Bengaluru, Karnataka, India</p>
+</div>
+</div>
+</div>
+<div class="flex-grow"></div> 
+<div class="w-full max-w-md mt-8">
+<p class="text-sm text-secondary-text-light dark:text-secondary-text-dark text-center pb-6">Your report is now being reviewed by the community.</p>
+<div class="flex flex-col gap-3">
+<button class="flex w-full items-center justify-center rounded-full bg-primary px-6 py-4 text-base font-bold text-black h-14">Done</button>
+<button class="flex w-full items-center justify-center rounded-full border border-black/20 dark:border-white/20 px-6 py-4 text-base font-bold text-text-light dark:text-text-dark h-14">Report Another Issue</button>
+</div>
+</div>
+</main>
+</div>
+
+</body></html>

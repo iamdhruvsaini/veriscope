@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Report New Issue</title>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,typography"></script>
+<script>
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              primary: "#FFC107",
+              "background-light": "#F8F5E6",
+              "background-dark": "#121212",
+              "card-light": "#FFFFFF",
+              "card-dark": "#1E1E1E",
+              "text-light-primary": "#212121",
+              "text-dark-primary": "#FFFFFF",
+              "text-light-secondary": "#424242",
+              "text-dark-secondary": "#BDBDBD",
+              "border-light": "#E0E0E0",
+              "border-dark": "#333333",
+            },
+            fontFamily: {
+              display: ["Inter", "sans-serif"],
+            },
+            borderRadius: {
+              DEFAULT: "1rem",
+            },
+          },
+        },
+      };
+    </script>
+<style>
+      .material-symbols-outlined {
+        font-variation-settings:
+        'FILL' 0,
+        'wght' 400,
+        'GRAD' 0,
+        'opsz' 24
+      }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background-light dark:bg-background-dark font-display">
+<div class="min-h-screen flex flex-col p-6">
+<header class="flex items-center justify-between pb-8">
+<button class="p-2 rounded-full text-text-light-primary dark:text-text-dark-primary">
+<span class="material-symbols-outlined">arrow_back_ios_new</span>
+</button>
+<h1 class="text-xl font-semibold text-text-light-primary dark:text-text-dark-primary">Report an Issue</h1>
+<div class="w-10 h-10"></div> 
+</header>
+<main class="flex-grow flex flex-col">
+<section class="mb-8">
+<h2 class="text-2xl font-bold text-text-light-primary dark:text-text-dark-primary mb-4">Discovery &amp; Location</h2>
+<p class="text-text-light-secondary dark:text-dark-secondary mb-6">Where is the accessibility issue located? Your precision helps us resolve it faster.</p>
+<div class="space-y-4">
+<button class="w-full flex items-center justify-center gap-3 text-left p-4 bg-card-light dark:bg-card-dark border border-border-light dark:border-border-dark rounded-lg shadow-sm transition-transform active:scale-[0.98]">
+<span class="material-symbols-outlined text-primary">my_location</span>
+<span class="font-medium text-text-light-primary dark:text-text-dark-primary">Use Current Location</span>
+</button>
+<button class="w-full flex items-center justify-center gap-3 text-left p-4 bg-card-light dark:bg-card-dark border border-border-light dark:border-border-dark rounded-lg shadow-sm transition-transform active:scale-[0.98]">
+<span class="material-symbols-outlined text-text-light-secondary dark:text-dark-secondary">search</span>
+<span class="font-medium text-text-light-secondary dark:text-dark-secondary">Search Address</span>
+</button>
+</div>
+</section>
+<section class="flex-grow">
+<h2 class="text-2xl font-bold text-text-light-primary dark:text-text-dark-primary mb-4">Category</h2>
+<p class="text-text-light-secondary dark:text-dark-secondary mb-6">What type of issue is it? Select the category that best fits.</p>
+<div class="grid grid-cols-2 gap-4">
+<button class="flex flex-col items-center justify-center p-6 bg-card-light dark:bg-card-dark border border-border-light dark:border-border-dark rounded-lg shadow-sm aspect-square transition-transform active:scale-[0.95]">
+<span class="material-symbols-outlined text-4xl text-primary mb-3">accessible</span>
+<span class="font-semibold text-text-light-primary dark:text-text-dark-primary">Wheelchair</span>
+</button>
+<button class="flex flex-col items-center justify-center p-6 bg-card-light dark:bg-card-dark border border-border-light dark:border-border-dark rounded-lg shadow-sm aspect-square transition-transform active:scale-[0.95]">
+<span class="material-symbols-outlined text-4xl text-primary mb-3">visibility</span>
+<span class="font-semibold text-text-light-primary dark:text-text-dark-primary">Visual</span>
+</button>
+<button class="flex flex-col items-center justify-center p-6 bg-card-light dark:bg-card-dark border border-border-light dark:border-border-dark rounded-lg shadow-sm aspect-square transition-transform active:scale-[0.95]">
+<span class="material-symbols-outlined text-4xl text-primary mb-3">hearing</span>
+<span class="font-semibold text-text-light-primary dark:text-text-dark-primary">Auditory</span>
+</button>
+<button class="flex flex-col items-center justify-center p-6 bg-card-light dark:bg-card-dark border border-border-light dark:border-border-dark rounded-lg shadow-sm aspect-square transition-transform active:scale-[0.95]">
+<span class="material-symbols-outlined text-4xl text-primary mb-3">psychology</span>
+<span class="font-semibold text-text-light-primary dark:text-text-dark-primary">Cognitive</span>
+</button>
+</div>
+</section>
+</main>
+<footer class="pt-8 pb-4">
+<button class="w-full bg-primary text-text-light-primary font-bold py-4 rounded-lg shadow-lg hover:opacity-90 transition-opacity active:scale-[0.98]">
+                Next
+            </button>
+</footer>
+</div>
+
+</body></html>

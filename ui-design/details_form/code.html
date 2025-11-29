@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html class="h-full" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Report New Issue - Details</title>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,typography"></script>
+<script>
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          colors: {
+            primary: "#FFC107",
+            "background-light": "#F8F5E6",
+            "background-dark": "#181818",
+            "charcoal": "#212121",
+            "off-white": "#F8F5E6",
+            "critical": "#DC2626", // red-600
+            "medium": "#F59E0B",   // amber-500
+            "resolved": "#16A34A"  // green-600
+          },
+          fontFamily: {
+            display: ["Inter", "sans-serif"],
+          },
+          borderRadius: {
+            DEFAULT: "1rem", // 16px
+          },
+        },
+      },
+    };
+  </script>
+<style>
+    .material-symbols-outlined {
+      font-variation-settings:
+      'FILL' 0,
+      'wght' 400,
+      'GRAD' 0,
+      'opsz' 24
+    }
+  </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="h-full font-display bg-background-light dark:bg-background-dark text-charcoal dark:text-off-white">
+<div class="flex flex-col h-full">
+<header class="p-4 flex items-center justify-between">
+<button class="p-2">
+<span class="material-symbols-outlined">arrow_back_ios_new</span>
+</button>
+<h1 class="text-xl font-bold">Report New Issue</h1>
+<div class="w-10"></div>
+</header>
+<main class="flex-grow p-6 flex flex-col gap-6 overflow-y-auto">
+<div class="flex items-center justify-center gap-1.5">
+<div class="w-1/3 h-1 bg-primary rounded-full"></div>
+<div class="w-1/3 h-1 bg-primary rounded-full"></div>
+<div class="w-1/3 h-1 bg-charcoal/20 dark:bg-off-white/20 rounded-full"></div>
+</div>
+<div class="text-center">
+<h2 class="text-2xl font-bold">Provide Details</h2>
+<p class="text-charcoal/70 dark:text-off-white/70 mt-1">Help us understand the issue better.</p>
+</div>
+<section>
+<h3 class="font-semibold mb-3 text-lg">Venue Type</h3>
+<div class="grid grid-cols-3 gap-4">
+<button class="flex flex-col items-center justify-center p-4 aspect-square rounded-lg bg-white dark:bg-charcoal/50 border border-charcoal/10 dark:border-off-white/10">
+<span class="material-symbols-outlined text-3xl">restaurant</span>
+<span class="text-sm mt-2">Restaurant</span>
+</button>
+<button class="flex flex-col items-center justify-center p-4 aspect-square rounded-lg bg-white dark:bg-charcoal/50 border border-charcoal/10 dark:border-off-white/10">
+<span class="material-symbols-outlined text-3xl">storefront</span>
+<span class="text-sm mt-2">Retail</span>
+</button>
+<button class="flex flex-col items-center justify-center p-4 aspect-square rounded-lg bg-white dark:bg-charcoal/50 border border-charcoal/10 dark:border-off-white/10">
+<span class="material-symbols-outlined text-3xl">local_parking</span>
+<span class="text-sm mt-2">Parking</span>
+</button>
+<button class="flex flex-col items-center justify-center p-4 aspect-square rounded-lg bg-white dark:bg-charcoal/50 border border-charcoal/10 dark:border-off-white/10">
+<span class="material-symbols-outlined text-3xl">train</span>
+<span class="text-sm mt-2">Transit</span>
+</button>
+<button class="flex flex-col items-center justify-center p-4 aspect-square rounded-lg bg-white dark:bg-charcoal/50 border border-charcoal/10 dark:border-off-white/10">
+<span class="material-symbols-outlined text-3xl">park</span>
+<span class="text-sm mt-2">Park</span>
+</button>
+<button class="flex flex-col items-center justify-center p-4 aspect-square rounded-lg bg-white dark:bg-charcoal/50 border border-charcoal/10 dark:border-off-white/10">
+<span class="material-symbols-outlined text-3xl">more_horiz</span>
+<span class="text-sm mt-2">Other</span>
+</button>
+</div>
+</section>
+<section>
+<h3 class="font-semibold mb-3 text-lg">Add Photos (Optional)</h3>
+<div class="flex items-center gap-4">
+<button class="flex-shrink-0 flex flex-col items-center justify-center w-24 h-24 rounded-lg bg-white dark:bg-charcoal/50 border-2 border-dashed border-charcoal/20 dark:border-off-white/20">
+<span class="material-symbols-outlined text-3xl text-charcoal/50 dark:text-off-white/50">add_a_photo</span>
+<span class="text-xs mt-1 text-charcoal/50 dark:text-off-white/50">Add</span>
+</button>
+<div class="flex-grow flex items-center gap-4 overflow-x-auto pb-2">
+<img alt="Photo of a blocked ramp with a trash can" class="w-24 h-24 object-cover rounded-lg flex-shrink-0" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBdH50jIbEtCPCpDY4oWZ0cQofzqTFN43TSUjAkSmihOem5_tNX35lOnM_pVio0zg5yuWB4ro0tqpMOO9i9VWh9N9SNxCHtr2Cw5t8YwRGFD9Q6PEzKSvFrSg6CsiQrtjAgSTdHEozZCD-dDBGCILoOLjXAMP_mY_di_FlZ68BdmpUYIqNCXusdwkqI-utWhSgzb_yzo_-wz8epiGHZDGt6Lk5-a3QLkroTh8UAvksj8N0AzVV_vv-UCInzSO5Fo-5FuHLQTRXGquT3"/>
+<img alt="Close-up photo of a steep, cracked concrete step" class="w-24 h-24 object-cover rounded-lg flex-shrink-0" src="https://lh3.googleusercontent.com/aida-public/AB6AXuApTbA6Kq3aNvpA5BGNtM4uGIBX-MdrUb5S7mRe0KRH5l1gOTARXNEQ8kqtZriWlPNwqawLYUwemrC9wXE4y-STg_nLqS5jNKWiBdlo3Yzt9MIeUX1ZFrQp1HHtIF0E6apcNHRLBjH1ujM7NJhvGKwabaxH-GJSlGf9kn77LxK7UiIxk7uoTfnmDBAmjtYTb54EU0NpOtm6Nxx5y5P46xbq16D5qPQUne9vOBRGVWkk5d0TkJsHt97Dp9OPupVjo_WUkO6VkgqS01Ub"/>
+<img alt="Wide shot of a narrow doorway with no automatic opener" class="w-24 h-24 object-cover rounded-lg flex-shrink-0" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCYhMiKiCpf5lNVL6NzUY34yuGio7PO8_eXIDbTj3eiMfQqwYTq3h-Kb6VcZ4h8-vj9bI7BDToH8SrPXPuZGgwk0VEHp1hY9wF64XFA4zfR2CdPf34vLah8vgENLGCwvcwF0_ZIUtuvYXgm7sLBprqgwHZmGsTFUDU8yWicR0TkYSxYAi0aKkZaTS-SPanzqfm0DDS-Oxne0lvQDtP2-GDiwyka4bHwINmnDMtiS1neP5zcfhnIvnNmHY5U_5apCP2rnF-wtOPuNaDd"/>
+</div>
+</div>
+</section>
+<section>
+<h3 class="font-semibold mb-3 text-lg">Severity Level</h3>
+<div class="flex flex-col gap-3">
+<button class="flex items-center w-full p-4 rounded-lg border-2 border-critical bg-critical/10 text-charcoal dark:text-off-white">
+<span class="material-symbols-outlined text-critical mr-3">error</span>
+<span class="font-medium">Critical</span>
+<span class="ml-auto material-symbols-outlined text-critical">radio_button_checked</span>
+</button>
+<button class="flex items-center w-full p-4 rounded-lg border border-charcoal/20 dark:border-off-white/20 bg-white/50 dark:bg-charcoal/30 text-charcoal/70 dark:text-off-white/70">
+<span class="material-symbols-outlined text-medium mr-3">warning</span>
+<span class="font-medium">Medium</span>
+<span class="ml-auto material-symbols-outlined text-charcoal/40 dark:text-off-white/40">radio_button_unchecked</span>
+</button>
+<button class="flex items-center w-full p-4 rounded-lg border border-charcoal/20 dark:border-off-white/20 bg-white/50 dark:bg-charcoal/30 text-charcoal/70 dark:text-off-white/70">
+<span class="material-symbols-outlined text-resolved mr-3">verified</span>
+<span class="font-medium">Minor</span>
+<span class="ml-auto material-symbols-outlined text-charcoal/40 dark:text-off-white/40">radio_button_unchecked</span>
+</button>
+</div>
+</section>
+<div class="flex-grow"></div>
+</main>
+<footer class="p-6 pt-2 bg-background-light dark:bg-background-dark">
+<button class="w-full bg-primary text-charcoal font-bold py-4 rounded-lg text-lg">
+        Continue
+      </button>
+</footer>
+</div>
+
+</body></html>

@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Accessibility Hub - AI Analysis</title>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Satoshi:wght@400;500;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,typography"></script>
+<script>
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          colors: {
+            primary: "#FFC107",
+            "background-light": "#F8F5E6",
+            "background-dark": "#121212",
+            "card-light": "#FFFFFF",
+            "card-dark": "#1E1E1E",
+            "text-light": "#212121",
+            "text-dark": "#E0E0E0",
+            "text-secondary-light": "#616161",
+            "text-secondary-dark": "#BDBDBD",
+          },
+          fontFamily: {
+            display: ["Satoshi", "sans-serif"],
+          },
+          borderRadius: {
+            DEFAULT: "1.25rem",
+          },
+        },
+      },
+    };
+  </script>
+<style>
+    .material-symbols-outlined {
+      font-variation-settings:
+      'FILL' 1,
+      'wght' 400,
+      'GRAD' 0,
+      'opsz' 24
+    }
+    .animate-loader {
+        animation: loader 1.2s infinite ease-in-out;
+    }
+    @keyframes loader {
+        0%, 80%, 100% { transform: scale(0.6); opacity: 0.5; }
+        40% { transform: scale(1.0); opacity: 1; }
+    }
+    .dot-1 { animation-delay: -0.32s; }
+    .dot-2 { animation-delay: -0.16s; }
+    .dot-3 { animation-delay: 0s; }
+  </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background-light dark:bg-background-dark font-display">
+<div class="min-h-screen flex flex-col items-center justify-center p-4" id="app-container">
+<div class="w-full max-w-md flex flex-col items-center justify-center text-center space-y-8" id="analysis-state">
+<div class="flex space-x-2">
+<div class="w-4 h-4 bg-primary rounded-full animate-loader dot-1"></div>
+<div class="w-4 h-4 bg-primary rounded-full animate-loader dot-2"></div>
+<div class="w-4 h-4 bg-primary rounded-full animate-loader dot-3"></div>
+</div>
+<div class="space-y-2">
+<h1 class="text-2xl font-bold text-text-light dark:text-text-dark">AI Analysis in Progress...</h1>
+<p class="text-text-secondary-light dark:text-text-secondary-dark">Analyzing your report for accessibility issues. This may take a moment.</p>
+</div>
+</div>
+<div class="w-full max-w-md flex-col items-center justify-center text-center space-y-8 hidden" id="submitted-state">
+<div class="relative w-24 h-24">
+<div class="absolute inset-0 bg-green-500 rounded-full opacity-20 animate-ping"></div>
+<div class="relative flex items-center justify-center w-24 h-24 bg-green-500 rounded-full">
+<span class="material-symbols-outlined text-white" style="font-size: 48px;">check</span>
+</div>
+</div>
+<div class="space-y-2">
+<h1 class="text-3xl font-bold text-text-light dark:text-text-dark">Report Submitted!</h1>
+<p class="text-lg text-text-secondary-light dark:text-text-secondary-dark">Thank you for helping make your community more accessible.</p>
+</div>
+<div class="w-full bg-card-light dark:bg-card-dark p-6 rounded-lg text-left space-y-4 shadow-lg border border-gray-200 dark:border-gray-700">
+<h2 class="text-lg font-bold text-text-light dark:text-text-dark">AI Findings Summary</h2>
+<div class="flex items-start space-x-4">
+<span class="material-symbols-outlined text-primary text-3xl mt-1">detector_status</span>
+<div>
+<p class="font-medium text-text-light dark:text-text-dark">Detected staircase with no ramp</p>
+<p class="text-sm text-green-600 dark:text-green-400 font-bold">98% confidence</p>
+</div>
+</div>
+</div>
+<div class="w-full pt-4">
+<button class="w-full bg-primary text-text-light dark:text-text-light font-bold py-4 px-6 rounded-lg text-lg hover:opacity-90 transition-opacity" id="done-btn">
+          Done
+        </button>
+</div>
+</div>
+</div>
+<script>
+    // Simulate the transition from analysis to submitted state
+    setTimeout(() => {
+      document.getElementById('analysis-state').classList.add('hidden');
+      document.getElementById('submitted-state').classList.remove('hidden');
+      document.getElementById('submitted-state').classList.add('flex');
+    }, 3000);
+    // Optional: Add functionality to the "Done" button
+    document.getElementById('done-btn').addEventListener('click', () => {
+      // Logic to navigate back home or to another screen
+      alert("Navigating back to the dashboard.");
+    });
+  </script>
+
+</body></html>

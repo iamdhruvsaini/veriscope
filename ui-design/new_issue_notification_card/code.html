@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Notification Card - Accessibility Alert</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "primary": "#f4d125",
+              "background-light": "#f8f8f5",
+              "background-dark": "#221f10",
+              "card-light": "#FEFEFE",
+              "card-dark": "#1A1A1A",
+              "text-light-primary": "#212121",
+              "text-dark-primary": "#f8f8f5",
+              "text-light-secondary": "#666666",
+              "text-dark-secondary": "#AAAAAA",
+            },
+            fontFamily: {
+              "display": ["Space Grotesk", "sans-serif"]
+            },
+            borderRadius: {"DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px"},
+          },
+        },
+      }
+    </script>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background-light dark:bg-background-dark font-display flex min-h-screen items-center justify-center p-4">
+<div class="w-full max-w-sm">
+<div class="relative flex w-full flex-col overflow-hidden rounded-xl bg-card-light dark:bg-card-dark shadow-lg ring-1 ring-black/5">
+<div class="flex items-center justify-between p-4 pb-0">
+<div class="flex items-center gap-3">
+<div class="relative flex items-center justify-center">
+<span class="absolute inline-flex h-full w-full animate-ping rounded-full bg-primary opacity-75"></span>
+<span class="material-symbols-outlined text-text-light-primary dark:text-text-dark-primary text-2xl relative" data-icon="warning">warning</span>
+</div>
+<h1 class="text-lg font-bold text-text-light-primary dark:text-text-dark-primary">New Issue Near You</h1>
+</div>
+<button class="flex h-8 w-8 items-center justify-center rounded-full text-text-light-secondary dark:text-text-dark-secondary transition-colors hover:bg-black/5 dark:hover:bg-white/10">
+<span class="material-symbols-outlined text-xl" data-icon="close">close</span>
+</button>
+</div>
+<div class="flex flex-col gap-4 p-4">
+<div class="flex flex-col gap-2">
+<div class="inline-flex items-center gap-2 rounded bg-primary/20 px-2 py-1 text-sm font-medium text-text-light-primary dark:text-text-dark-primary self-start">
+<span class="material-symbols-outlined text-base" data-icon="accessible">accessible</span>
+<span>Blocked Ramp</span>
+</div>
+<div class="space-y-1">
+<p class="flex items-center gap-2 text-base text-text-light-primary dark:text-text-dark-primary">
+<span class="material-symbols-outlined text-lg text-text-light-secondary dark:text-text-dark-secondary" data-icon="near_me">near_me</span>
+<span>Approx. 150m away</span>
+</p>
+<p class="flex items-center gap-2 text-base text-text-light-primary dark:text-text-dark-primary">
+<span class="material-symbols-outlined text-lg text-text-light-secondary dark:text-text-dark-secondary" data-icon="location_on">location_on</span>
+<span>Near Brigade Road, Bengaluru</span>
+</p>
+<p class="flex items-center gap-2 text-sm text-text-light-secondary dark:text-text-dark-secondary">
+<span class="material-symbols-outlined text-lg" data-icon="schedule">schedule</span>
+<span>Reported 2 mins ago</span>
+</p>
+</div>
+</div>
+<button class="flex w-full cursor-pointer items-center justify-center overflow-hidden rounded-lg h-12 min-h-[44px] bg-primary px-4 text-[#181711] text-base font-bold leading-normal transition-transform active:scale-[0.98]">
+<span class="truncate">I Can Verify</span>
+</button>
+</div>
+</div>
+</div>
+
+</body></html>
